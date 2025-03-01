@@ -8,6 +8,9 @@ function Fetchmethod() {
   const [usersPerPage] = useState(9); // You can change the number of users per page
   const [filterText, setFilterText] = useState("");
 
+  console.log('users :', users);
+  
+
   // Fetch data from the API when the component mounts
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
