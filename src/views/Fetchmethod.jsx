@@ -25,7 +25,7 @@ function Fetchmethod() {
 
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-5">
       {/* Navbar */}
       <nav className="bg-blue-600text-white flex justify-between items-center">
         <Link to={'/'}>
@@ -42,7 +42,7 @@ function Fetchmethod() {
       <div className="text-center">
         {loading ? (
           // Modern spinner
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center" style={{ height: '100vh' }}>
             <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
           </div>
         ) : (
