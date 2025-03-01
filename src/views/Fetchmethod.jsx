@@ -20,19 +20,41 @@ function Fetchmethod() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Users List</h1>
+    <div className="container mx-auto p-6 text-center">
+      <button
+        className="bg-blue-500 text-white py-2 px-4 rounded-md mb-6 hover:bg-blue-600 transition duration-300"
+        onClick={() => window.location.href = '/'}
+      >
+        Back to Home
+      </button>
+
+      <h1 className="text-3xl font-semibold text-gray-800 mb-4">Users List</h1>
 
       {loading ? (
-        <p>Loading...</p>
+        <div className="text-blue-500 text-xl font-bold animate-spin">
+          Loading...
+        </div>
       ) : (
-        <ul>
-          {users.map((user) => (
-            <li key={user.id}>
-              {user.name} - {user.email}
-            </li>
-          ))}
-        </ul>
+        <table className="min-w-full table-auto border-collapse shadow-md rounded-lg overflow-hidden">
+          <thead>
+            <tr className="bg-blue-500 text-white">
+              <th className="px-6 py-3 text-left">Name</th>
+              <th className="px-6 py-3 text-left">Email</th>
+              <th className="px-6 py-3 text-left">Phone</th>
+              <th className="px-6 py-3 text-left">Website</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((user) => (
+              <tr key={user.id} className="border-b hover:bg-gray-100">
+                <td className="px-6 py-4">{user.name}</td>
+                <td className="px-6 py-4">{user.email}</td>
+                <td className="px-6 py-4">{user.phone}</td>
+                <td className="px-6 py-4">{user.website}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       )}
     </div>
   );
