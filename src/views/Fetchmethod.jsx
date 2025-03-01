@@ -47,7 +47,7 @@ function Fetchmethod() {
       {/* Navbar */}
       <nav className="text-white flex justify-between items-center">
         <Link to={'/'}>
-          <h1 className="text-xl font-semibold" style={{ color: '#000080' }}>SkillUp Academy</h1>
+          <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>SkillUp Academy</h1>
         </Link>
 
         <div className='flex justify-between gap-2'>

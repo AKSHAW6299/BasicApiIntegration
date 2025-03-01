@@ -7,7 +7,7 @@ function Home() {
     <>
       <nav className="bg-slate-50 flex justify-between items-center p-5 sticky top-0 z-50 shadow-md w-full">
         <Link to={'/'}>
-          <h1 className="text-xl font-semibold" style={{ color: '#000080' }}>SkillUp Academy</h1>
+          <h1 className="text-2xl font-semibold" style={{ color: '#000080'}}>SkillUp Academy</h1>
         </Link>
         <div></div>
       </nav>
