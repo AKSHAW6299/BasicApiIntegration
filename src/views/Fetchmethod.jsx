@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Fetchmethod() {
   const [users, setUsers] = useState([]);
@@ -19,11 +21,16 @@ function Fetchmethod() {
       });
   }, []);
 
+  console.log('users :', users);
+
+
   return (
     <div className="container mx-auto p-6">
       {/* Navbar */}
       <nav className="bg-blue-600text-white flex justify-between items-center">
-        <h1 className="text-xl font-semibold">User Data</h1>
+        <Link to={'/'}>
+          <h1 className="text-xl font-semibold" style={{ color: '#000080' }}>SkillUp Academy</h1>
+        </Link>
         <button
           className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
           onClick={() => window.location.href = '/'}
