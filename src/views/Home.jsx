@@ -18,7 +18,7 @@ function Home() {
 
       <div className="min-h-screen flex flex-col justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 py-6 px-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Card 1: Fetch API */}
+          {/* Card 1: Fetch method */}
           <Link to={'/fetchmethod'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch() method - (API integration)</h2>
@@ -31,7 +31,7 @@ function Home() {
             </div>
           </Link>
 
-          {/* Card 2: Axios API */}
+          {/* Card 2: Axios library */}
           <Link to={'/usingaxios'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios library - (API integration)</h2>
@@ -44,8 +44,8 @@ function Home() {
             </div>
           </Link>
 
-          {/* Card 3: Axios Instance */}
-          <Link to={'/usingaxiosinstance'}>
+          {/* Card 3: React Query library */}
+          <Link to={'/reactquerylibrary'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">react-query library - (API integration)</h2>
               <p className="text-gray-600 mb-4">
@@ -57,10 +57,10 @@ function Home() {
             </div>
           </Link>
 
-          {/* Card 4: Fetch with Async/Await */}
-          <Link to={'/'}>
+          {/* Card 4: Axios Instance */}
+          <Link to={'/usingaxiosinstance'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch with Async/Await</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios Instance (direct api integration)</h2>
               <p className="text-gray-600 mb-4">
                 --
               </p>
