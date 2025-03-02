@@ -32,7 +32,7 @@ function Home() {
           </Link>
 
           {/* Card 2: Axios library */}
-          <Link to={'/usingaxios'}>
+          <Link to={'/Usingaxioslibrary'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios library - (API integration)</h2>
               <p className="text-gray-600 mb-4">

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function UsingAxios() {
+function UsingAxiosLibrary() {
   return (
     <div>UsingAxios</div>
   )
 }
 
-export default UsingAxios
+export default UsingAxiosLibrary
