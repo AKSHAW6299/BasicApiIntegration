@@ -21,7 +21,7 @@ function Home() {
           {/* Card 1: Fetch API */}
           <Link to={'/fetchmethod'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch() method</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch() method - (API integration)</h2>
               <p className="text-gray-600 mb-4">
                 This card demonstrates how to integrate APIs using the native <span className='font-bold'>fetch() method</span> in JavaScript.
               </p>
@@ -34,7 +34,7 @@ function Home() {
           {/* Card 2: Axios API */}
           <Link to={'/usingaxios'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios library</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios library - (API integration)</h2>
               <p className="text-gray-600 mb-4">
                 This card shows how to integrate APIs using the <span className='font-bold'>Axios library</span> for more flexible requests.
               </p>
@@ -47,7 +47,7 @@ function Home() {
           {/* Card 3: Axios Instance */}
           <Link to={'/usingaxiosinstance'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">react-query library</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">react-query library - (API integration)</h2>
               <p className="text-gray-600 mb-4">
                 This card shows how to integrate APIs using the <span className='font-bold'>react-query library</span> for more flexible requests.
               </p>
