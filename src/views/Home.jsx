@@ -23,7 +23,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch() method</h2>
               <p className="text-gray-600 mb-4">
-                This card demonstrates how to integrate APIs using the native `fetch` method in JavaScript.
+                This card demonstrates how to integrate APIs using the native <span className='font-bold'>fetch() method</span> in JavaScript.
               </p>
               <button className="bg-blue-500 text-white rounded px-4 py-2 transition hover:bg-blue-600 focus:outline-none">
                 Learn More
@@ -36,7 +36,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios library</h2>
               <p className="text-gray-600 mb-4">
-                This card shows how to integrate APIs using the Axios library for more flexible requests.
+                This card shows how to integrate APIs using the <span className='font-bold'>Axios library</span> for more flexible requests.
               </p>
               <button className="bg-green-500 text-white rounded px-4 py-2 transition hover:bg-green-600 focus:outline-none">
                 Learn More
@@ -49,7 +49,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">react-query library</h2>
               <p className="text-gray-600 mb-4">
-                This card covers how to configure and use Axios instances for more efficient API calls.
+                This card shows how to integrate APIs using the <span className='font-bold'>react-query library</span> for more flexible requests.
               </p>
               <button className="bg-red-500 text-white rounded px-4 py-2 transition hover:bg-red-600 focus:outline-none">
                 Learn More
@@ -62,7 +62,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch with Async/Await</h2>
               <p className="text-gray-600 mb-4">
-                Learn how to use `async/await` for cleaner, more readable asynchronous code with `fetch`.
+                --
               </p>
               <button className="bg-purple-500 text-white rounded px-4 py-2 transition hover:bg-purple-600 focus:outline-none">
                 Learn More
@@ -75,7 +75,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios GET Request</h2>
               <p className="text-gray-600 mb-4">
-                This card shows how to use Axios to perform GET requests to fetch data from an API.
+                --
               </p>
               <button className="bg-teal-500 text-white rounded px-4 py-2 transition hover:bg-teal-600 focus:outline-none">
                 Learn More
@@ -88,7 +88,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios POST Request</h2>
               <p className="text-gray-600 mb-4">
-                This card demonstrates how to use Axios to send data via POST requests.
+                --
               </p>
               <button className="bg-orange-500 text-white rounded px-4 py-2 transition hover:bg-orange-600 focus:outline-none">
                 Learn More
@@ -101,7 +101,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios PUT Request</h2>
               <p className="text-gray-600 mb-4">
-                Here, you'll learn how to use Axios to perform PUT requests to update data.
+                --
               </p>
               <button className="bg-indigo-500 text-white rounded px-4 py-2 transition hover:bg-indigo-600 focus:outline-none">
                 Learn More
@@ -114,7 +114,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios DELETE Request</h2>
               <p className="text-gray-600 mb-4">
-                This card explains how to use Axios to perform DELETE requests for removing data.
+                --
               </p>
               <button className="bg-yellow-500 text-white rounded px-4 py-2 transition hover:bg-yellow-600 focus:outline-none">
                 Learn More
@@ -127,7 +127,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Handling Errors with Axios</h2>
               <p className="text-gray-600 mb-4">
-                Learn how to properly handle errors when working with Axios API requests.
+                --
               </p>
               <button className="bg-pink-500 text-white rounded px-4 py-2 transition hover:bg-pink-600 focus:outline-none">
                 Learn More
