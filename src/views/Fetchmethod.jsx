@@ -9,7 +9,7 @@ function Fetchmethod() {
   const [filterText, setFilterText] = useState("");
 
   console.log('users :', users);
-  
+
 
   // Fetch data from the API when the component mounts
   useEffect(() => {
@@ -49,8 +49,12 @@ function Fetchmethod() {
     <div className="container mx-auto p-5">
       {/* Navbar */}
       <nav className="text-white flex justify-between items-center">
-        <Link to={'/'}>
+        {/* <Link to={'/'}>
           <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>SkillUp Academy</h1>
+        </Link> */}
+
+        <Link to={'/'}>
+          <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>XYZ</h1>
         </Link>
 
         <div className='flex justify-between gap-2'>
@@ -67,7 +71,7 @@ function Fetchmethod() {
           </div>
           <button
             className="text-white py-2 px-4 rounded-md transition duration-300"
-            style={{ backgroundColor: '#000080'}}
+            style={{ backgroundColor: '#000080' }}
             onClick={() => window.location.href = '/'}
           >
             Back
@@ -86,7 +90,7 @@ function Fetchmethod() {
             {/* Table */}
             <table className="min-w-full table-auto border-collapse shadow-md rounded-lg overflow-hidden">
               <thead className="text-center">
-                <tr className="text-white" style={{ backgroundColor: '#000080'}}>
+                <tr className="text-white" style={{ backgroundColor: '#000080' }}>
                   <th className="px-6 py-3">Name</th>
                   <th className="px-6 py-3">Email</th>
                   <th className="px-6 py-3">Phone</th>
