@@ -48,7 +48,7 @@ function Fetchmethod() {
   return (
     <div className="container mx-auto p-4">
       {/* Navbar */}
-      <nav className="text-white flex justify-between items-center">
+      <nav className="flex justify-between items-center">
         {/* <Link to={'/'}>
           <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>SkillUp Academy</h1>
         </Link> */}
