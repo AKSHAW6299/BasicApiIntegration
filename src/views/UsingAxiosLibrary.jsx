@@ -26,7 +26,7 @@ function UsingAxiosLibrary() {
       });
   }, []);
 
-  // Filter the posts based on filterText
+  // Filter the posts based on filterText (Search filter)
   const filteredPosts = data?.filter((post) =>
     post.title.toLowerCase().includes(filterText.toLowerCase()) ||
     post.id.toString().includes(filterText)
