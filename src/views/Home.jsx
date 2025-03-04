@@ -34,7 +34,7 @@ function Home() {
           {/* Card 2: Axios library */}
           <Link to={'/Usingaxioslibrary'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios library - (API integration)</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios package - (API integration)</h2>
               <p className="text-gray-600 mb-4">
                 This card shows how to integrate APIs using the <span className='font-bold'>Axios library</span> for more flexible requests.
               </p>
@@ -47,7 +47,7 @@ function Home() {
           {/* Card 3: React Query library */}
           <Link to={'/reactquerylibrary'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">react-query library - (API integration)</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">react-query package - (API integration)</h2>
               <p className="text-gray-600 mb-4">
                 This card shows how to integrate APIs using the <span className='font-bold'>react-query library</span> for more flexible requests.
               </p>
