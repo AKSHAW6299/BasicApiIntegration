@@ -46,7 +46,7 @@ function Fetchmethod() {
   const totalPages = Math.ceil(filteredUsers.length / usersPerPage);
 
   return (
-    <div className="container mx-auto p-5">
+    <div className="container mx-auto p-4">
       {/* Navbar */}
       <nav className="text-white flex justify-between items-center">
         {/* <Link to={'/'}>

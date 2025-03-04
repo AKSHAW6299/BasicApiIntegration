@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DataTable from 'react-data-table-component';
+import { Link } from 'react-router-dom';
 
 function UsingAxiosLibrary() {
   const [data, setData] = useState(null);
@@ -63,10 +64,12 @@ function UsingAxiosLibrary() {
   }
 
   return (
-    <div className="container mx-auto p-5">
+    <div className="container mx-auto p-4">
       {/* Navbar */}
       <nav className="text-white flex justify-between items-center">
-        <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>XYZ</h1>
+        <Link to={'/'}>
+          <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>XYZ</h1>
+        </Link>
 
         <div className='flex justify-between gap-2'>
           {/* Filter Input */}
@@ -90,11 +93,12 @@ function UsingAxiosLibrary() {
       </nav>
 
       <div className="text-center mt-6">
-        {/* <h1 className="text-xl font-semibold mb-4">Fetched Data</h1> */}
+        <h1 className="text-xl font-semibold mb-4">API integration : (axios) package</h1>
+        <h1 className='text-xl font-semibold'>Table : (react-data-table-component) package</h1>
 
         {/* DataTable */}
         <DataTable
-          title="API integration using axios package and (react-data-table-component) package"
+          // title="Any heading"
           columns={columns}
           data={filteredPosts}
           pagination
