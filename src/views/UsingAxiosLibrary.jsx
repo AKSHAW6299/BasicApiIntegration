@@ -16,6 +16,7 @@ function UsingAxiosLibrary() {
     // Fetch data using axios
     axios.get(apiUrl)
       .then((response) => {
+        console.log(response.data);
         setData(response.data);
         setLoading(false);
       })
