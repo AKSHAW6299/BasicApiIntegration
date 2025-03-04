@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import DataTable from 'react-data-table-component';
 
 function UsingAxiosLibrary() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [filterText, setFilterText] = useState('');
 
   // Dummy API endpoint
   const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
@@ -13,8 +15,6 @@ function UsingAxiosLibrary() {
     // Fetch data using axios
     axios.get(apiUrl)
       .then((response) => {
-        console.log('respomse :', response);
-
         setData(response.data);
         setLoading(false);
       })
@@ -22,10 +22,40 @@ function UsingAxiosLibrary() {
         setError('Error fetching data');
         setLoading(false);
       });
-  }, []); // Empty dependency array means it runs once when the component is mounted
+  }, []);
+
+  // Filter the posts based on filterText
+  const filteredPosts = data?.filter((post) =>
+    post.title.toLowerCase().includes(filterText.toLowerCase())
+  );
+
+  // Define columns for DataTable
+  const columns = [
+    {
+      name: 'Post ID',
+      selector: (row) => row.id,
+      sortable: true,
+    },
+    {
+      name: 'Title',
+      selector: (row) => row.title,
+      sortable: true,
+    },
+    {
+      name: 'Body',
+      selector: (row) => row.body,
+    },
+  ];
+
+  // Handle filter text change
+  const handleFilterChange = (e) => setFilterText(e.target.value);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center items-center" style={{ height: '100vh' }}>
+        <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
+      </div>
+    );
   }
 
   if (error) {
@@ -33,18 +63,60 @@ function UsingAxiosLibrary() {
   }
 
   return (
-    <div>
-      <h1>Fetched Data:</h1>
-      <ul>
-        {data && data.map(item => (
-          <li key={item.id}>
-            <strong>Post ID:</strong> {item.id}<br />
-            <strong>Title:</strong> {item.title}<br />
-            <strong>Body:</strong> {item.body}<br />
-            <hr />
-          </li>
-        ))}
-      </ul>
+    <div className="container mx-auto p-5">
+      {/* Navbar */}
+      <nav className="text-white flex justify-between items-center">
+        <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>XYZ</h1>
+
+        <div className='flex justify-between gap-2'>
+          {/* Filter Input */}
+          <div>
+            <input
+              type="text"
+              value={filterText}
+              onChange={handleFilterChange}
+              placeholder="Filter by title"
+              className="px-6 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md transition duration-300 ease-in-out hover:border-blue-400"
+            />
+          </div>
+          <button
+            className="text-white py-2 px-4 rounded-md transition duration-300"
+            style={{ backgroundColor: '#000080' }}
+            onClick={() => window.location.href = '/'}
+          >
+            Back
+          </button>
+        </div>
+      </nav>
+
+      <div className="text-center mt-6">
+        {/* <h1 className="text-xl font-semibold mb-4">Fetched Data</h1> */}
+
+        {/* DataTable */}
+        <DataTable
+          title="API integration using axios package and (react-data-table-component) package"
+          columns={columns}
+          data={filteredPosts}
+          pagination
+          paginationPerPage={10} // 9 posts per page
+          paginationRowsPerPageOptions={[9, 15, 30]} // Pagination options
+          selectableRows
+          persistTableHead
+          customStyles={{
+            headCells: {
+              style: {
+                padding: '10px', // Reducing padding between the header cells
+                fontWeight: 'bold',
+              },
+            },
+            cells: {
+              style: {
+                padding: '8px', // Reducing padding between the data cells
+              },
+            },
+          }}
+        />
+      </div>
     </div>
   );
 }
