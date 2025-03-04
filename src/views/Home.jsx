@@ -11,7 +11,7 @@ function Home() {
         </Link> */}
 
         <Link to={'/'}>
-          <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>XYZ</h1>
+          <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>React JS</h1>
         </Link>
         <div></div>
       </nav>
