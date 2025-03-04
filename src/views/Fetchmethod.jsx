@@ -79,6 +79,10 @@ function Fetchmethod() {
         </div>
       </nav>
 
+      <div>
+        <h1 className='text-2xl font-semibold text-center py-1 mt-2'>API integration : Fetch() method</h1>
+      </div>
+
       <div className="text-center mt-6">
         {loading ? (
           // Modern spinner
