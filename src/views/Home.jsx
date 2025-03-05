@@ -47,7 +47,7 @@ function Home() {
           {/* Card 3: React Query library */}
           <Link to={'/usingaxiosinstance'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">* Axios Instance (direct api integration)</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">* Axios instance (direct api integration)</h2>
               <p className="text-gray-600 mb-4">
                 This card shows how to integrate APIs using the <span className='font-bold'>Axios Instance</span> for more flexible requests.
               </p>
@@ -60,7 +60,7 @@ function Home() {
           {/* Card 4: Axios Instance */}
           <Link to={'/#'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Websocket</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Aadhar verificatioin Api</h2>
               <p className="text-gray-600 mb-4">
                 --
               </p>
@@ -73,7 +73,7 @@ function Home() {
           {/* Card 5: Axios GET Request */}
           <Link to={'/#'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios GET Request</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">OTP verificatioin  Api</h2>
               <p className="text-gray-600 mb-4">
                 --
               </p>
@@ -86,7 +86,7 @@ function Home() {
           {/* Card 6: Axios POST Request */}
           <Link to={'/#'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios POST Request</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Payment link Api</h2>
               <p className="text-gray-600 mb-4">
                 --
               </p>
@@ -99,7 +99,7 @@ function Home() {
           {/* Card 7: Axios PUT Request */}
           <Link to={'/#'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios PUT Request</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">QR code Api</h2>
               <p className="text-gray-600 mb-4">
                 --
               </p>
@@ -112,7 +112,7 @@ function Home() {
           {/* Card 8: Axios DELETE Request */}
           <Link to={'/#'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios DELETE Request</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">JWT Api</h2>
               <p className="text-gray-600 mb-4">
                 --
               </p>
@@ -125,7 +125,7 @@ function Home() {
           {/* Card 9: Handling Errors with Axios */}
           <Link to={'/#'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">Handling Errors with Axios</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">Transaction enquiry Api</h2>
               <p className="text-gray-600 mb-4">
                 --
               </p>
