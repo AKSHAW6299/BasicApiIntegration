@@ -95,7 +95,7 @@ function UsingAxiosLibrary() {
       </nav>
 
       <div className="text-center mt-6">
-        <h1 className="text-2xl font-semibold mb-4">API integration : (axios) package</h1>
+        <h1 className="text-2xl font-semibold mb-4">2) API integration : (axios) package</h1>
         <h1 className='text-xl font-semibold'>Table : (react-data-table-component) package</h1>
 
         {/* DataTable without pagination */}
