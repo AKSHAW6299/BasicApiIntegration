@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { apiGetDummyData } from '../services/DummyApi';
 import DataTable from 'react-data-table-component';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function UsingAxiosInstance() {
   const [data, setData] = useState(null);
@@ -19,9 +21,15 @@ function UsingAxiosInstance() {
 
       setData(response?.data); // Assuming response is an array of objects
       setLoading(false);
+      
+      // Show success toast
+      toast.success('Data loaded successfully!', { position: 'top-right', autoClose: 3000 });
     } catch (error) {
-      setError('Error fetching data');
+      setError('Error loading data');
       setLoading(false);
+
+      // Show error toast
+      toast.error('Failed to load data!', { position: 'top-right', autoClose: 3000 });
     }
   };
 
@@ -57,6 +65,9 @@ function UsingAxiosInstance() {
 
   return (
     <div className="container mx-auto p-4">
+      {/* Toast Container */}
+      <ToastContainer />
+
       {/* Navbar */}
       <nav className="flex justify-between items-center">
         <Link to={'/'}>
@@ -73,7 +84,7 @@ function UsingAxiosInstance() {
       </nav>
 
       <div className="text-center mt-6">
-        <h1 className="text-2xl font-semibold mb-4">3) Direct api integration : (axios instance) : used many times</h1>
+        <h1 className="text-2xl font-semibold mb-4">3) Direct API Integration: (Axios Instance) - Used Many Times</h1>
         {/* DataTable */}
         <DataTable
           columns={columns}
