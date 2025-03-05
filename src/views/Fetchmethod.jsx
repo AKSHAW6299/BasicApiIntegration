@@ -6,10 +6,8 @@ function Fetchmethod() {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [usersPerPage] = useState(9); // You can change the number of users per page
-  const [filterText, setFilterText] = useState("");
 
   console.log('users :', users);
-
 
   // Fetch data from the API when the component mounts
   useEffect(() => {
@@ -26,57 +24,32 @@ function Fetchmethod() {
       });
   }, []);
 
-  // Filter the users based on filterText
-  const filteredUsers = users.filter((user) =>
-    user.name.toLowerCase().includes(filterText.toLowerCase())
-  );
-
   // Get the current users for the current page
   const indexOfLastUser = currentPage * usersPerPage;
   const indexOfFirstUser = indexOfLastUser - usersPerPage;
-  const currentUsers = filteredUsers.slice(indexOfFirstUser, indexOfLastUser);
+  const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  // Handle filter text change
-  const handleFilterChange = (e) => setFilterText(e.target.value);
-
   // Calculate total pages
-  const totalPages = Math.ceil(filteredUsers.length / usersPerPage);
+  const totalPages = Math.ceil(users.length / usersPerPage);
 
   return (
     <div className="container mx-auto p-4">
       {/* Navbar */}
       <nav className="flex justify-between items-center">
-        {/* <Link to={'/'}>
-          <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>SkillUp Academy</h1>
-        </Link> */}
-
         <Link to={'/'}>
           <h1 className="text-2xl font-semibold" style={{ color: '#000080' }}>React JS</h1>
         </Link>
 
-        <div className='flex justify-between gap-2'>
-          {/* Filter Input */}
-          <div className="">
-            <input
-              type="text"
-              value={filterText}
-              onChange={handleFilterChange}
-              placeholder="Filter by name"
-              className="px-6 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md transition duration-300 ease-in-out hover:border-blue-400"
-
-            />
-          </div>
-          <button
-            className="text-white py-2 px-4 rounded-md transition duration-300"
-            style={{ backgroundColor: '#000080' }}
-            onClick={() => window.location.href = '/'}
-          >
-            Back
-          </button>
-        </div>
+        <button
+          className="text-white py-2 px-4 rounded-md transition duration-300"
+          style={{ backgroundColor: '#000080' }}
+          onClick={() => window.location.href = '/'}
+        >
+          Back
+        </button>
       </nav>
 
       <div>
