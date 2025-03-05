@@ -23,7 +23,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Fetch() method - (API integration)</h2>
               <p className="text-gray-600 mb-4">
-                This card demonstrates how to integrate APIs using the native <span className='font-bold'>fetch() method</span> in JavaScript.
+                Integrate APIs using the native <span className='font-bold'>fetch() method</span> in JavaScript.
               </p>
               <button className="bg-blue-500 text-white rounded px-4 py-2 transition hover:bg-blue-600 focus:outline-none">
                 Learn More
@@ -36,7 +36,7 @@ function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Axios package - (API integration)</h2>
               <p className="text-gray-600 mb-4">
-                This card shows how to integrate APIs using the <span className='font-bold'>Axios library</span> for more flexible requests.
+                Integrate APIs using the <span className='font-bold'>Axios library (data-table search)</span> for more flexible requests.
               </p>
               <button className="bg-green-500 text-white rounded px-4 py-2 transition hover:bg-green-600 focus:outline-none">
                 Learn More
@@ -47,9 +47,9 @@ function Home() {
           {/* Card 3: React Query library */}
           <Link to={'/usingaxiosinstance'}>
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">* Axios instance (direct api integration)</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">* Axios instance - (direct api integration)</h2>
               <p className="text-gray-600 mb-4">
-                This card shows how to integrate APIs using the <span className='font-bold'>Axios Instance</span> for more flexible requests.
+                Integrate APIs using the <span className='font-bold'>Axios Instance (data-table pagination)</span> for more flexible requests.
               </p>
               <button className="bg-red-500 text-white rounded px-4 py-2 transition hover:bg-red-600 focus:outline-none">
                 Learn More
