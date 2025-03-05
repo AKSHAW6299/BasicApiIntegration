@@ -8,7 +8,6 @@ import 'react-toastify/dist/ReactToastify.css';
 function UsingAxiosInstance() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
 
   useEffect(() => {
     fetchDummyData();
@@ -19,16 +18,15 @@ function UsingAxiosInstance() {
       const response = await apiGetDummyData();
       console.log('response :', response?.data);
 
-      setData(response?.data); // Assuming response is an array of objects
+      setData(response?.data);
       setLoading(false);
       
       // Show success toast
       toast.success('Data loaded successfully!', { position: 'top-right', autoClose: 3000 });
     } catch (error) {
-      setError('Error loading data');
       setLoading(false);
 
-      // Show error toast
+      // Show error toast instead of rendering error message
       toast.error('Failed to load data!', { position: 'top-right', autoClose: 3000 });
     }
   };
@@ -59,10 +57,6 @@ function UsingAxiosInstance() {
     );
   }
 
-  if (error) {
-    return <div className="text-red-500 text-center">{error}</div>;
-  }
-
   return (
     <div className="container mx-auto p-4">
       {/* Toast Container */}
@@ -86,13 +80,15 @@ function UsingAxiosInstance() {
       <div className="text-center mt-6">
         <h1 className="text-2xl font-semibold mb-4">3) Direct API Integration: (Axios Instance) - Used Many Times</h1>
         {/* DataTable */}
-        <DataTable
-          columns={columns}
-          data={data}
-          selectableRows
-          persistTableHead
-          pagination
-        />
+        {data && (
+          <DataTable
+            columns={columns}
+            data={data}
+            selectableRows
+            persistTableHead
+            pagination
+          />
+        )}
       </div>
     </div>
   );
