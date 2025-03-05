@@ -20,7 +20,7 @@ function UsingAxiosLibrary() {
         setData(response.data);
         setLoading(false);
       })
-      .catch((err) => {
+      .catch(() => {
         setError('Error fetching data');
         setLoading(false);
       });
@@ -31,7 +31,6 @@ function UsingAxiosLibrary() {
     post.title.toLowerCase().includes(filterText.toLowerCase()) ||
     post.id.toString().includes(filterText)
   );
-  
 
   // Define columns for DataTable
   const columns = [
@@ -99,14 +98,10 @@ function UsingAxiosLibrary() {
         <h1 className="text-2xl font-semibold mb-4">API integration : (axios) package</h1>
         <h1 className='text-xl font-semibold'>Table : (react-data-table-component) package</h1>
 
-        {/* DataTable */}
+        {/* DataTable without pagination */}
         <DataTable
-          // title="Any heading"
           columns={columns}
           data={filteredPosts}
-          pagination
-          paginationPerPage={10} // 9 posts per page
-          paginationRowsPerPageOptions={[9, 15, 30]} // Pagination options
           selectableRows
           persistTableHead
           customStyles={{
@@ -114,6 +109,7 @@ function UsingAxiosLibrary() {
               style: {
                 padding: '10px', // Reducing padding between the header cells
                 fontWeight: 'bold',
+                color: '#000080',
               },
             },
             cells: {
