@@ -67,7 +67,7 @@ function Fetchmethod() {
             {/* Table */}
             <table className="min-w-full table-auto border-collapse shadow-md rounded-lg overflow-hidden">
               <thead className="text-center">
-                <tr className="text-white" style={{ backgroundColor: '#000080' }}>
+                <tr className="text-white" style={{ backgroundColor: '#C0C0C0' }}>
                   <th className="px-6 py-3">Name</th>
                   <th className="px-6 py-3">Email</th>
                   <th className="px-6 py-3">Phone</th>
